@@ -1,0 +1,9 @@
+{
+  "name": "WebRTC sample app",
+  "description": "WebRTC Sample app",
+  "launch_path": "/index.html",
+  "permissions": {
+    "audio-capture": {},
+    "video-capture": {}
+  }
+}
