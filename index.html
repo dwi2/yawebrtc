@@ -3,15 +3,25 @@
   <meta charset="utf-8">
   <title></title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-  <script defer src="js/video_controller.js"></script>
+  <script defer src="js/peer.min.js"></script>
+  <script defer src="js/uuid.js"></script>
   <script defer src="js/app.js"></script>
 </head>
 <body>
   <div>
     <video id="remote-video"></video>
   </div>
+  <div>
+    <video id="local-video"></video>
+  </div>
   <div id="menu-bar">
-    <button id="mute-video"></button>
+    <div>
+      My name: <input type="text" id="local-name" name="local-name"></input>
+      <button id="login" disabled>Login</button>
+      <button id="logout" disabled>Logout</button>
+      <span id="local-peer-id"></span>
+    </div>
+    <div><button id="call" disabled>Call</button></div>
   </div>
 </body>
 </html>
